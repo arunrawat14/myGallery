@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+body {
+    background: linear-gradient(to right, #fff, #fff);
+}
+
+.container {
+    width: 80vw;
+    height: 100vh;
+}
+
+.heading {
+    margin-top: 3%;
+    margin-left: 40%;
+    font-size: 3rem;
+
+}
+
+.gallery {
+    margin-top: 2%;
+    position: relative;
+    flex-basis: 80%;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 370px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bg1 {
+    background-image: url(image16.jpg);
+}
+
+.bg2 {
+    background-image: url(image17.JPG);
+}
+
+.bg3 {
+    background-image: url(./pihu\ image.jpg);
+}
+
+.bg4 {
+    background-image: url(image4.jpeg);
+}
+
+.bg5 {
+    background-image: url(image5.jpeg);
+}
+
+.bg6 {
+    background-image: url(image6.jpeg);
+}
+
+.bg7 {
+    background-image: url(image7.jpeg);
+}
+
+.bg8 {
+    background-image: url(image8.jpeg);
+}
+
+.bg9 {
+    background-image: url(image9.jpeg);
+}
+
+.bg10 {
+    background-image: url(image10.jpg);
+}
+
+.bg11 {
+    background-image: url(image11.jpg);
+}
+
+.bg12 {
+    background-image: url(image12.jpg);
+}
+
+.bg13 {
+    background-image: url(image13.jpg);
+}
+
+.bg14 {
+    background-image: url(image14.jpg);
+}
+
+.bg15 {
+    background-image: url(image15.jpg);
+}
+
+
+
+
+.box {
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+  filter: drop-shadow(0 0 10px #333);
+}
+
+.box figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+    height: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 1s;
+  }
+  
+  .box:hover figcaption {
+    opacity: 1;
+    transform: scale(1.03);
+  }  
